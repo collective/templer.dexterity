@@ -213,7 +213,7 @@ up your buildout, that's included in the develop.cfg. If not, add::
     defaults = ['--auto-color', '--auto-progress']
 
     eggs =
-        ${buildout:eggs}
+        \${buildout:eggs}
         list of extra test-support packages
 
 And add `[test]` to your parts list.
