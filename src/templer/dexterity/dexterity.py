@@ -30,6 +30,7 @@ class Dexterity(BasicZope):
     help = HELP_TEXT
     post_run_msg = POST_RUN_TEXT
     required_templates = ['plone_basic']
+    default_required_structures = ['egg_docs', 'bootstrap', ]
     category = "Plone Development"
     use_cheetah = True
     use_local_commands = SUPPORTS_LOCAL_COMMANDS
