@@ -16,7 +16,7 @@ class ${behavior_interfacename}(form.Schema):
     """
        Marker/Form interface for ${behavior_name}
     """
-   
+
     # -*- Your Zope schema definitions here ... -*-
 
 
