@@ -52,23 +52,23 @@ that step, you will not be able to use the "add" command.
 
 The "add" command allows for addition of "sub" skeletons like content types
 and behaviors. It must be run inside the "src" directory of this package using
-the "paster add" command.
+the "templer add" command.
 
 To get a list of available add commands, do the following,
 starting from your buildout directory::
 
     cd src/${namespace_package}.${package}/src
-    ../../../bin/paster add --list
+    ../../../bin/templer add --list
 
 To add a new content type skeleton::
 
     cd src/${namespace_package}.${package}/src
-    ../../../bin/paster add content_type
+    ../../../bin/templer add content_type
 
 And, a behavior::
 
     cd src/${namespace_package}.${package}/src
-    ../../../bin/paster add content_type
+    ../../../bin/templer add behavior
 
 As when you ran templer to create this package, templer will ask you the
 questions that must be answered to create the new skeleton.
