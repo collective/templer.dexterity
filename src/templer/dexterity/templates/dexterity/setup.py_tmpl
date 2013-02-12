@@ -37,7 +37,7 @@ setup(name=${repr($project)},
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plone.app.dexterity',
+          'plone.app.dexterity [grok]',
           'plone.namedfile [blobs]',
           # -*- Extra requirements: -*-
       ],
@@ -51,12 +51,4 @@ setup(name=${repr($project)},
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      # The next two lines may be deleted after you no longer need
-      # addcontent support from paster and before you distribute
-      # your package.
-#if $use_localcommands
-      setup_requires=["PasteScript"],
-      paster_plugins=["templer.localcommands"],
-#end if
-
       )

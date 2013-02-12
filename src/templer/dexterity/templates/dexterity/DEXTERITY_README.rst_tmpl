@@ -230,14 +230,3 @@ Before Package Distribution or Deployment
 
 You should delete this file from your package before package distribution.
 Failure to do so may result in your being ridiculed.
-
-In order to support local "add" commands, Templer created Paste,
-PasteDeploy and PasteScript eggs inside your product. These are only needed
-for development. You can and should remove them from your add-on distribution.
-
-Also remove::
-
-  setup_requires=["PasteScript"],
-  paster_plugins=["templer.localcommands"],
-
-from the packages setup.py.

@@ -5,7 +5,6 @@ version = '1.0a1'
 
 tests_require = [
     'Cheetah',
-    'PasteScript',
     'templer.core',
     'templer.buildout',
     'templer.zope',
@@ -35,7 +34,7 @@ setup(name='templer.dexterity',
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
         "Topic :: Software Development :: Code Generators",
     ],
-    keywords='plone dexterity paster templates zopeskel',
+    keywords='plone dexterity templer templates zopeskel',
     author=' ZopeSkel/Templer Development Team',
     author_email='zopeskel@lists.plone.org',
     url='http://github.com/collective/templer.dexterity',
@@ -54,8 +53,6 @@ setup(name='templer.dexterity',
     extras_require=dict(test=tests_require),
     entry_points="""
     # -*- Entry points: -*-
-    [paste.paster_create_template]
-    dexterity = templer.dexterity:Dexterity
     [templer.templer_sub_template]
     content_type = templer.dexterity.localcommands.dexterity:DexterityContent
     behavior = templer.dexterity.localcommands.dexterity:DexterityBehavior
