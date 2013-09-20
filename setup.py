@@ -53,6 +53,9 @@ setup(name='templer.dexterity',
     extras_require=dict(test=tests_require),
     entry_points="""
     # -*- Entry points: -*-
+    [paste.paster_create_template]
+    dexterity = templer.dexterity:Dexterity
+
     [templer.templer_sub_template]
     content_type = templer.dexterity.localcommands.dexterity:DexterityContent
     behavior = templer.dexterity.localcommands.dexterity:DexterityBehavior
